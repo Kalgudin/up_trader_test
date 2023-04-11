@@ -1,0 +1,16 @@
+{% load common_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul class="menu">
+    {% for m_item in menu_items %}
+        <li><a href="{{ m_item.url }}">{{ m_item.name }}</a></li>
+    {% endfor %}
+    </ul>
+
+</body>
+</html>
