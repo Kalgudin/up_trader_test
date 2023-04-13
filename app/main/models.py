@@ -5,6 +5,7 @@ class Menu(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название')
     level = models.PositiveIntegerField(default=1, verbose_name='Уровень')
     url = models.CharField(max_length=255, verbose_name='Ссылка')
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True, blank=True, related_name='children')
 
     def __str__(self):
         return str(self.name)

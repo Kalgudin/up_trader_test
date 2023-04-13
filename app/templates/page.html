@@ -1,0 +1,20 @@
+{% load tags %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    {% block extra_head %}{% endblock extra_head %}
+</head>
+<body>
+<header>
+<h5>Menu</h5>
+    <h1>{{ item }}</h1>
+    ---------------
+{% draw_menu 'menu' %}
+    ---------------
+</header>
+
+</body>
+</html>
