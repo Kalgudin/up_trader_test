@@ -4,5 +4,5 @@ from .models import *
 
 @admin.register(Menu)
 class MenuAdmin(admin.ModelAdmin):
-    list_display = ['name', 'level', 'parent', 'url']
-    ordering = ('level', 'name',)
+    list_display = ['name', 'tag', 'level', 'parent', 'url']
+    ordering = ('level', 'name', 'tag')

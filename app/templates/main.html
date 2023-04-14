@@ -9,12 +9,20 @@
 </head>
 <body>
 <header>
-<h5>Menu</h5>
-    <h1>{{ item }}</h1>
-    ---------------
+
+<h1>Main Menu</h1>
 {% draw_menu 'main_menu' %}
-    ---------------
+<h1>-----------------------</h1>
+
+<h1>Over Menu</h1>
+{% draw_menu 'second_menu' %}
+<h1>-----------------------</h1>
+
 </header>
-<a href="/admin">admin</a>
+<h1>-----------------------</h1>
+<p><a href="/">Main Page</a></p>
+<p><a href="/admin">admin</a></p>
+<h1>-----------------------</h1>
+<h5>Path: {{ path }}</h5>
 </body>
 </html>

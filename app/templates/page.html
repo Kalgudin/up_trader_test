@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
-    {% block extra_head %}{% endblock extra_head %}
 </head>
 <body>
 <header>
-<h5>Menu</h5>
-    <h1>{{ item }}</h1>
-    ---------------
-{% draw_menu 'menu' %}
-    ---------------
+
+<h1>Main Menu</h1>
+{% draw_menu 'main_menu' %}
+<h1>-----------------------</h1>
+
+<h1>Over Menu</h1>
+{% draw_menu 'second_menu' %}
+<h1>-----------------------</h1>
+
 </header>
+<h1>-----------------------</h1>
+<p><a href="/">Main Page</a></p>
+<p><a href="/admin">admin</a></p>
 
 </body>
 </html>

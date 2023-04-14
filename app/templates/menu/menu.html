@@ -1,6 +1,6 @@
 
     <ul class="menu">
     {% for m_item in menu_items %}
-        <li><a href="{{ m_item.url }}">{{ m_item.name }} - {{ m_item.level }}</a></li>
+        <li class="menu_items"><a href="{{ m_item.url }}">{{ m_item.name }} -level- {{ m_item.level }}</a></li>
     {% endfor %}
     </ul>
