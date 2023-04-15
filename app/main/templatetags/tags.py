@@ -16,7 +16,7 @@ def draw_menu(context, tag):
             if item.parent: _get_parents(menu_items)
             _get_children(menu_items)
         except:
-            menu_items = []
+            menu_items = Menu.objects.filter(level=1, tag=tag)
     return {
         "menu_items": menu_items,
     }
